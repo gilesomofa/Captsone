@@ -7,15 +7,13 @@ class Navigation extends Component {
   render() {
     return (
       <Container>
-        <div className Navigation>
+        <div className= 'Navigation'>
           <h1
             style={{
               backgroundColor: "blue",
               fontFamily: "Noto Sans",
               height: "150px",
-              display: "flex"
-            
-                
+              display: "flex" 
             }}
           >
             Daily Sped

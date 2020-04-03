@@ -19,7 +19,7 @@ class Login extends Component {
     document.cookie = `loggedIn=true;max-age=60*20000`;
     // set loggedIn = true and max-age = 60*20000 (twenty minutes)
 
-    window.location.replace("/");
+    window.location.replace("/dashboard");
   };
 
   render() {
