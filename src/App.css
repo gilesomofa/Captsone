@@ -2,21 +2,41 @@
   margin: 0;
   padding: 0;
 }
-
-body{
-  font-family: Arial, Helvitica, Futura,;
+body {
+  font-family: Arial, Helvitica, Futura;
 }
 .login-form {
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
 }
-
-.login-form.p{
-  text-align: center;
-  color: crimson;
+.Navigation {
+  width: 100%;
+  padding-left: 20px;
+  margin: 0;
 }
-Container.login-form.p{
-  color: red;
-
+.Navigation h1 {
+  color: ivory;
+  line-height: 5rem;
+}
+.Navigation p {
+  color: ivory;
+  text-decoration-line: underline;
+}
+.Dashboard {
+  height: 100%;
+  display: flex;
+  padding: 20px 20px;
+  border: cyan 2px solid;
+}
+#root {
+  height: 100vh;
+}
+.Gallery{
+  float: right;
+  justify-items: flex-start;
+  padding-right: 40px;
+  border: lawngreen 1px solid;
+  height: 100vh;
+  width: 65%;
 }
