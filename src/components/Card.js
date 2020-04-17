@@ -1,13 +1,22 @@
 import React from 'react'
+import { Component } from 'react'
 
 
-
-const Card = ({ name, avatar }) =>{
+//Make this a class component
+//create a handleSubmit
+class Card extends Component  {
+    state = {
+        dialogueBox: false,
+        
+    }
+    render(){
     return(
-        <div>
-        <img className= 'avatar' src={avatar}/>
-        <p className= 'studentNickName'>{name}</p>
+        <div className="studentCard" onClick>
+            <img className= 'avatar' src={this.props.avatar}/>
+            <p className= 'studentNickName'>{this.props.name}</p>
+            
         </div>
     )
+}
 }
 export default Card

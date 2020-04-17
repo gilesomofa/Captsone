@@ -6,7 +6,7 @@ import { combineReducers }  from 'redux'
 ;
 
 const student = (state = null) => state;
-
+const behavior = (state = []) => state;
 const list = (state = [], action) => {
   switch (action.type) {
     case "ADD_STUDENT":
@@ -21,9 +21,17 @@ const list = (state = [], action) => {
       newState.splice(action.value, 1);
       return newState;
 
+      // case "ADD_BEHAVIOR":
+      //   const newBehaviorState = [...state];
+      //   console.log(newBehaviorState);
+      //   console.log(action.value);
+      //   newListState.push(action.value);
+      //   return newBehaviorState;
+
+
     default:
       return state;
   }
 };
 
-export default combineReducers({ student, list});
+export default combineReducers({ student, list, behavior});

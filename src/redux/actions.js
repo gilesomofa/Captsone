@@ -11,3 +11,10 @@ export const addStudent = listing=> {
       value: index
     };
   };
+
+  //   export const addBehavior = index => {
+  //     return {
+  //       type: "ADD_BEHAVIOR",
+  //       value: index
+  //     };
+  // };

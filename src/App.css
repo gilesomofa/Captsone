@@ -32,11 +32,21 @@ body {
 #root {
   height: 100vh;
 }
-.Gallery{
+.Gallery {
+  /* display: flex; */
+  /* flex-wrap: wrap;
+  flex-flow: row; */
   float: right;
-  justify-items: flex-start;
-  padding-right: 40px;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  padding: 15px 20px;
   border: lawngreen 1px solid;
   height: 100vh;
   width: 65%;
+}
+.studentCard {
+  border: 1px blue solid;
+  width: 110px;
+  height: 110px;
+  margin: 15px 15px;
 }

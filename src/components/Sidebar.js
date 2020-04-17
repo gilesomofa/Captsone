@@ -18,28 +18,31 @@ import {
         studentAvatar: '',
         studentNickName : '',
         studentId : '',
-        dialogBox : false
+        dialogBox : false,
+        preferredStudentBehvavior: [],
+        nonPreferredStudentBehavior: [],
+        writeInBehavior: ""
         }
 
     handleTextChange = (e) => {
         const newState = { ...this.state };
         newState[e.target.name] = e.target.value;
-        this.setState({newState});
-        console.log(e.target);
-        console.log(this.state.studentNickName);
-        console.log(this.state.studentNickName);
+        this.setState(newState);
+        
       };
     toggleDialogBox = () => {
         this.setState({ dialogBox : !this.state.dialogBox })
     }
     handleSubmit = (e) =>{
-        console.log(this.state.studentAvatar)
-        console.log(this.state.studentNickName)
         e.preventDefault()
         this.props.addStudent({
             studentAvatar: this.state.studentAvatar,
             studentNickName: this.state.studentNickName,
-            studentId: this.state.studentId
+            studentId: this.state.studentId,
+            preferredStudentBehvavior: this.state.preferredStudentBehavior,
+            nonPreferredStudentBehavior: this.state.nonPreferredStudentBehavior,
+            writeInBehavior: this.props.writeInBehavior,
+            
             })
             this.toggleDialogBox()
     }
@@ -64,9 +67,14 @@ import {
                 value={this.state.studentNickName}
                 onChange={this.handleTextChange}
                 required
-              />
-                    
-                    <img src="../Images/girl1.jpg" alt="picture of girl"/>
+              /> 
+              //below 3 more TextFields for pre, nonpre, and text
+            //     name=""
+
+
+
+
+            //         <img src="../Images/girl1.jpg" alt="picture of girl"/>
                     </form>
                 </Dialog>
             </div>
