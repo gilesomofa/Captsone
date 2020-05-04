@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Sidebar from "../containers/Sidebar";
 import ListOfStudents from "../containers/ListOfStudents";
-// import Behaviors from "../containers/Behaviors";
 
 //The Dashboard is my app home page that will render the StudentGallery on right
 //and Sidebar on left

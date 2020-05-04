@@ -1,22 +1,23 @@
 import React from 'react'
-import { Component } from 'react'
+import { Component } from 'react';
+import Sidebar from '../components/Sidebar';
 
 
 //Make this a class component
 //create a handleSubmit
-class Card extends Component  {
+class Card extends Component {
     state = {
         dialogueBox: false,
-        
+
     }
-    render(){
-    return(
-        <div className="studentCard" onClick>
-            <img className= 'avatar' src={this.props.avatar}/>
-            <p className= 'studentNickName'>{this.props.name}</p>
-            
-        </div>
-    )
-}
+    render() {
+        return (
+            <div className="studentCard" onClick>
+                <p className='studentNickName'>{this.props.name}</p>
+                <ul></ul>
+
+            </div>
+        )
+    }
 }
 export default Card
